@@ -11,8 +11,12 @@
     --bg-color: #1f1f21;
     --text-color: #fff;
     --main-color: #20b6e4;
+    --second-color: #a7a6a6;
+    --bg-color: linear-gradient(130.08deg, #27313a 0%, #191919 100%);
+    --second-bg-collor: linear-gradient(130.08deg, #353c42 0%, #302b2b 100%);
 
     --big-font: 7rem;
+    --h2-font: 4rem;
     --p-font: 1.1rem;
 }
 
@@ -138,7 +142,7 @@ section{
 .home-text p{
     font-size: var(--p-font);
     font-weight: 400;
-    color: #c3c3c3;
+    color: var(--second-color);
     line-height: 30px;
     margin-bottom: 30px;
 }
@@ -208,6 +212,50 @@ section{
 .social i:hover{
     transform: translateY(-10px);
 }
+
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+    background: var(--second-bg-collor);
+    margin-bottom: 45px;
+    width: 100%;
+    height: 100vh;
+}
+.about-img img{
+    max-width: 100%;
+    width: 540px;
+}
+.about-text h2{
+    font-weight: 500;
+    margin: 8px 0px 25px;
+    line-height: 1.1;
+    font-size: var(--h2-font);
+}
+
+.about-text h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-top: 45px;
+}
+
+.about-text p{
+    max-width: 650px;
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+
+
+
+
+
+
+
 
 
 
